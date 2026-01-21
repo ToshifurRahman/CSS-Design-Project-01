@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,168 +20,403 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .font-bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
+
+      .font-open-sans {
+        font-family: "Open Sans", sans-serif;
+      }
+      .text-primary {
+        color: #a4bc46;
+      }
+    </style>
   </head>
 
-  <body>
-    <div class="dots"></div>
-    <div class="header-container">
-      <header class="page-header">
-        <nav class="navbar">
-          <div class="brand">
-            <img src="icons/logo_icon.png" alt="logo" />
-            <h2 class="brand-title">
-              <span class="brand-accent">GenZ</span> Fashion
+  <body class="font-roboto">
+    <div
+      class="hidden md:block absolute w-[150px] h-[170px] left-[20vw] md:left-[30vw] -top-[100px] z-[100]"
+      style="
+        background: radial-gradient(circle, #ffe2aa 1.5px, transparent 2.5px);
+        background-size: 15px 15px;
+        background-repeat: repeat;
+      "
+    ></div>
+    <div class="bg-[#fffbf0] px-4 sm:px-8 md:px-16 lg:px-[8.44rem]">
+      <header class="mx-auto pb-24">
+        <nav
+          class="flex flex-col md:flex-row justify-between items-center pt-4 md:pt-8 gap-4 md:gap-0"
+        >
+          <div class="flex items-center gap-3">
+            <img
+              src="icons/logo_icon.png"
+              alt="logo"
+              class="w-10 h-7 sm:w-14 sm:h-10"
+            />
+            <h2
+              class="font-montserrat text-lg sm:text-xl md:text-[25px] font-bold"
+            >
+              <span class="text-primary">GenZ</span>
+              <span class="text-[#363958]">Fashion</span>
             </h2>
           </div>
-          <ul class="nav-links">
-            <li><a href="">Home</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
+          <ul class="flex flex-wrap justify-center mt-0 gap-2 sm:gap-0">
+            <li>
+              <a
+                href=""
+                class="text-[#3c3c3c] font-roboto font-medium text-base px-8"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#3c3c3c] font-roboto font-medium text-base px-8"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#3c3c3c] font-roboto font-medium text-base px-8"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#3c3c3c] font-roboto font-medium text-base px-8"
+                >Contact Us</a
+              >
+            </li>
           </ul>
         </nav>
 
-        <div class="hero">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              <span class="hero-highlight">Be the Genzs</span><br />of Winter
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 mt-6 md:mt-0"
+        >
+          <div
+            class="w-full lg:max-w-[700px] flex flex-col gap-2 sm:gap-3 text-center lg:text-left"
+          >
+            <h1
+              class="text-[#363958] font-bebas text-4xl sm:text-5xl md:text-6xl lg:text-[80px] font-normal leading-tight sm:leading-tight md:leading-[4rem] lg:leading-[6rem]"
+            >
+              <span class="text-[#fabe4c] font-bebas">Be the Genzs</span
+              ><br />of Winter
             </h1>
-            <p class="hero-desc">
+
+            <p
+              class="text-[#3e3e3e] text-sm sm:text-base font-normal m-0 px-4 lg:px-0"
+            >
               Lorem Ipsum is simply dummy text of the printing <br />and
               typesetting industry.
             </p>
-            <button class="btn-primary">
-              <img src="icons/cart.png" alt="" />
-              <p>BUY NOW</p>
+            <button
+              class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[150px] sm:w-[170px] h-[50px] sm:h-[60px] border-none rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5 mx-auto lg:mx-0"
+            >
+              <img src="icons/cart.png" alt="" class="w-5 h-5 sm:w-6 sm:h-6" />
+              <p class="text-white text-sm sm:text-base font-medium">BUY NOW</p>
             </button>
           </div>
-          <div class="hero-image">
-            <img src="images/model.png" alt="model" />
+          <div class="w-full lg:w-auto flex justify-center lg:pt-14 lg:pr-56">
+            <img
+              src="images/model.png"
+              alt="model"
+              class="w-64 sm:w-80 md:w-96 lg:w-auto max-w-full"
+            />
           </div>
         </div>
       </header>
     </div>
 
-    <section class="product-section">
-      <h1 class="product-title">W0MAN Jacket</h1>
-      <section class="product-grid">
-        <section class="product-card">
-          <section class="card-img">
-            <img src="./images/jacket-1.png" alt="Yellow Coat Jacket " />
+    <section
+      class="bg-white mt-8 sm:mt-12 md:mt-[49px] px-4 sm:px-8 md:px-16 lg:px-[8.44rem] pb-7"
+    >
+      <h1
+        class="text-[#363958] font-bebas text-3xl sm:text-4xl md:text-[48px] font-normal pb-4 sm:pb-[21px] text-center sm:text-left"
+      >
+        W0MAN Jacket
+      </h1>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center"
+      >
+        <section
+          class="flex flex-col gap-0 w-full max-w-[370px] sm:w-[370px] h-auto sm:h-[550px] rounded-[20px] p-[18px] pb-3 shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <section
+            class="w-full h-[280px] sm:h-[327px] bg-[#f1f1f1] p-6 sm:p-[27px_48px] rounded-[20px] flex items-center justify-center"
+          >
+            <img
+              src="./images/jacket-1.png"
+              alt="Yellow Coat Jacket "
+              class="w-full h-full object-contain"
+            />
           </section>
-          <section class="product-content">
-            <h1 class="product-name">Yellow Coat Jacket</h1>
-            <p class="product-desc">
+          <section
+            class="pt-4 sm:pt-[17px] px-0 pb-0 pl-1 flex flex-col gap-3 sm:gap-[13px]"
+          >
+            <h1 class="text-[#363958] text-xl sm:text-2xl font-bold">
+              Yellow Coat Jacket
+            </h1>
+            <p class="text-[#3e3e3e] text-sm sm:text-base font-normal">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
               amet.
             </p>
-            <section class="bottom-bar">
-              <p class="price">$234</p>
-              <button class="btn-primary">
-                <img src="icons/cart.png" alt="" />
-                <p>BUY NOW</p>
+            <section
+              class="flex flex-row justify-between items-center flex-wrap gap-3"
+            >
+              <p
+                class="font-roboto text-3xl sm:text-4xl text-[#fabe4c] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[140px] sm:w-[170px] h-[50px] sm:h-[60px] border-none rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5"
+              >
+                <img
+                  src="icons/cart.png"
+                  alt=""
+                  class="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <p class="text-white text-sm sm:text-base font-medium">
+                  BUY NOW
+                </p>
               </button>
             </section>
           </section>
         </section>
-        <section class="product-card">
-          <section class="card-img">
-            <img src="./images/jacket-2.png" alt="Ladies Jacket" />
+        <section
+          class="flex flex-col gap-0 w-full max-w-[370px] sm:w-[370px] h-auto sm:h-[550px] rounded-[20px] p-[18px] pb-3 shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <section
+            class="w-full h-[280px] sm:h-[327px] bg-[#f1f1f1] p-6 sm:p-[27px_48px] rounded-[20px] flex items-center justify-center"
+          >
+            <img
+              src="./images/jacket-2.png"
+              alt="Ladies Jacket"
+              class="w-full h-full object-contain"
+            />
           </section>
-          <section class="product-content">
-            <h1 class="product-name">Ladies Jacket</h1>
-            <p class="product-desc">
+          <section
+            class="pt-4 sm:pt-[17px] px-0 pb-0 pl-1 flex flex-col gap-3 sm:gap-[13px]"
+          >
+            <h1 class="text-[#363958] text-xl sm:text-2xl font-bold">
+              Ladies Jacket
+            </h1>
+            <p class="text-[#3e3e3e] text-sm sm:text-base font-normal">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
               amet.
             </p>
-            <section class="bottom-bar">
-              <p class="price">$234</p>
-              <button class="btn-primary">
-                <img src="icons/cart.png" alt="" />
-                <p>BUY NOW</p>
+            <section
+              class="flex flex-row justify-between items-center flex-wrap gap-3"
+            >
+              <p
+                class="font-roboto text-3xl sm:text-4xl text-[#fabe4c] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[140px] sm:w-[170px] h-[50px] sm:h-[60px] border-none rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5"
+              >
+                <img
+                  src="icons/cart.png"
+                  alt=""
+                  class="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <p class="text-white text-sm sm:text-base font-medium">
+                  BUY NOW
+                </p>
               </button>
             </section>
           </section>
         </section>
-        <section class="product-card">
-          <section class="card-img">
-            <img src="./images/jacket-3.png" alt="Woman Leather Jacket  " />
+        <section
+          class="flex flex-col gap-0 w-full max-w-[370px] sm:w-[370px] h-auto sm:h-[550px] rounded-[20px] p-[18px] pb-3 shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <section
+            class="w-full h-[280px] sm:h-[327px] bg-[#f1f1f1] p-6 sm:p-[27px_48px] rounded-[20px] flex items-center justify-center"
+          >
+            <img
+              src="./images/jacket-3.png"
+              alt="Woman Leather Jacket  "
+              class="w-full h-full object-contain"
+            />
           </section>
-          <section class="product-content">
-            <h1 class="product-name">Woman Leather Jacket</h1>
-            <p class="product-desc">
+          <section
+            class="pt-4 sm:pt-[17px] px-0 pb-0 pl-1 flex flex-col gap-3 sm:gap-[13px]"
+          >
+            <h1 class="text-[#363958] text-xl sm:text-2xl font-bold">
+              Woman Leather Jacket
+            </h1>
+            <p class="text-[#3e3e3e] text-sm sm:text-base font-normal">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
               amet.
             </p>
-            <section class="bottom-bar">
-              <p class="price">$234</p>
-              <button class="btn-primary">
-                <img src="icons/cart.png" alt="" />
-                <p>BUY NOW</p>
+            <section
+              class="flex flex-row justify-between items-center flex-wrap gap-3"
+            >
+              <p
+                class="font-roboto text-3xl sm:text-4xl text-[#fabe4c] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[140px] sm:w-[170px] h-[50px] sm:h-[60px] border-none rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5"
+              >
+                <img
+                  src="icons/cart.png"
+                  alt=""
+                  class="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <p class="text-white text-sm sm:text-base font-medium">
+                  BUY NOW
+                </p>
               </button>
             </section>
           </section>
         </section>
       </section>
     </section>
-    <section class="product-section">
-      <h1 class="product-title">MAN Jacket</h1>
-      <section class="product-grid">
-        <section class="product-card">
-          <section class="card-img">
-            <img src="./images/jacket-4.png" alt="Snowboard Jacket Mens" />
+    <section
+      class="bg-white mt-8 sm:mt-12 md:mt-[49px] px-4 sm:px-8 md:px-16 lg:px-[8.44rem] pb-7"
+    >
+      <h1
+        class="text-[#363958] font-bebas text-3xl sm:text-4xl md:text-[48px] font-normal pb-4 sm:pb-[21px] text-center sm:text-left"
+      >
+        MAN Jacket
+      </h1>
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center"
+      >
+        <section
+          class="flex flex-col gap-0 w-full max-w-[370px] sm:w-[370px] h-auto sm:h-[550px] rounded-[20px] p-[18px] pb-3 shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <section
+            class="w-full h-[280px] sm:h-[327px] bg-[#f1f1f1] p-6 sm:p-[27px_48px] rounded-[20px] flex items-center justify-center"
+          >
+            <img
+              src="./images/jacket-4.png"
+              alt="Snowboard Jacket Mens"
+              class="w-full h-full object-contain"
+            />
           </section>
-          <section class="product-content">
-            <h1 class="product-name">Snowboard Jacket Mens</h1>
-            <p class="product-desc">
+          <section class="pt-[17px] px-0 pb-0 pl-1 flex flex-col gap-[13px]">
+            <h1 class="text-[#363958] text-2xl font-bold">
+              Snowboard Jacket Mens
+            </h1>
+            <p class="text-[#3e3e3e] text-base font-normal">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
               amet.
             </p>
-            <section class="bottom-bar">
-              <p class="price">$234</p>
-              <button class="btn-primary">
-                <img src="icons/cart.png" alt="" />
-                <p>BUY NOW</p>
+            <section class="flex flex-row justify-between">
+              <p class="font-roboto text-4xl text-[#fabe4c] font-black pt-2">
+                $234
+              </p>
+              <button
+                class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[170px] h-[60px] border-none rounded-[10px] px-6 py-2.5"
+              >
+                <img src="icons/cart.png" alt="" class="w-6 h-6" />
+                <p class="text-white text-base font-medium">BUY NOW</p>
               </button>
             </section>
           </section>
         </section>
-        <section class="product-card">
-          <section class="card-img">
-            <img src="./images/jacket-5.png" alt="Ladies Jacket" />
+        <section
+          class="flex flex-col gap-0 w-full max-w-[370px] sm:w-[370px] h-auto sm:h-[550px] rounded-[20px] p-[18px] pb-3 shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <section
+            class="w-full h-[280px] sm:h-[327px] bg-[#f1f1f1] p-6 sm:p-[27px_48px] rounded-[20px] flex items-center justify-center"
+          >
+            <img
+              src="./images/jacket-5.png"
+              alt="Ladies Jacket"
+              class="w-full h-full object-contain"
+            />
           </section>
-          <section class="product-content">
-            <h1 class="product-name">Man Leather Jackets</h1>
-            <p class="product-desc">
+          <section
+            class="pt-4 sm:pt-[17px] px-0 pb-0 pl-1 flex flex-col gap-3 sm:gap-[13px]"
+          >
+            <h1 class="text-[#363958] text-xl sm:text-2xl font-bold">
+              Man Leather Jackets
+            </h1>
+            <p class="text-[#3e3e3e] text-sm sm:text-base font-normal">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
               amet.
             </p>
-            <section class="bottom-bar">
-              <p class="price">$234</p>
-              <button class="btn-primary">
-                <img src="icons/cart.png" alt="" />
-                <p>BUY NOW</p>
+            <section
+              class="flex flex-row justify-between items-center flex-wrap gap-3"
+            >
+              <p
+                class="font-roboto text-3xl sm:text-4xl text-[#fabe4c] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[140px] sm:w-[170px] h-[50px] sm:h-[60px] border-none rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5"
+              >
+                <img
+                  src="icons/cart.png"
+                  alt=""
+                  class="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <p class="text-white text-sm sm:text-base font-medium">
+                  BUY NOW
+                </p>
               </button>
             </section>
           </section>
         </section>
-        <section class="product-card">
-          <section class="card-img">
-            <img src="./images/jacket-6.png" alt="Woman Leather Jacket  " />
+        <section
+          class="flex flex-col gap-0 w-full max-w-[370px] sm:w-[370px] h-auto sm:h-[550px] rounded-[20px] p-[18px] pb-3 shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <section
+            class="w-full h-[280px] sm:h-[327px] bg-[#f1f1f1] p-6 sm:p-[27px_48px] rounded-[20px] flex items-center justify-center"
+          >
+            <img
+              src="./images/jacket-6.png"
+              alt="Woman Leather Jacket  "
+              class="w-full h-full object-contain"
+            />
           </section>
-          <section class="product-content">
-            <h1 class="product-name">Man Casual Jackets</h1>
-            <p class="product-desc">
+          <section
+            class="pt-4 sm:pt-[17px] px-0 pb-0 pl-1 flex flex-col gap-3 sm:gap-[13px]"
+          >
+            <h1 class="text-[#363958] text-xl sm:text-2xl font-bold">
+              Man Casual Jackets
+            </h1>
+            <p class="text-[#3e3e3e] text-sm sm:text-base font-normal">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
               amet.
             </p>
-            <section class="bottom-bar">
-              <p class="price">$234</p>
-              <button class="btn-primary">
-                <img src="icons/cart.png" alt="" />
-                <p>BUY NOW</p>
+            <section
+              class="flex flex-row justify-between items-center flex-wrap gap-3"
+            >
+              <p
+                class="font-roboto text-3xl sm:text-4xl text-[#fabe4c] font-black"
+              >
+                $234
+              </p>
+              <button
+                class="flex flex-row justify-evenly items-center bg-gradient-to-b from-[#a4bc46] to-[#85a019] text-white w-[140px] sm:w-[170px] h-[50px] sm:h-[60px] border-none rounded-[10px] px-4 sm:px-6 py-2 sm:py-2.5"
+              >
+                <img
+                  src="icons/cart.png"
+                  alt=""
+                  class="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <p class="text-white text-sm sm:text-base font-medium">
+                  BUY NOW
+                </p>
               </button>
             </section>
           </section>
@@ -189,37 +424,81 @@
       </section>
     </section>
 
-    <section class="features-section">
-      <section class="features-content">
-        <section class="features-card">
-          <img src="./icons/house.png" alt="" />
-          <section class="features-details">
-            <h1>Find the Perfect Fit</h1>
-            <p>
+    <section
+      class="flex flex-col lg:grid lg:grid-rows-1 lg:grid-cols-2 gap-8 lg:gap-0 mb-8 sm:mb-12 bg-white mt-8 sm:mt-12 md:mt-[49px] px-4 sm:px-8 md:px-16 lg:px-[8.44rem] pb-12 sm:pb-20 lg:pb-28"
+    >
+      <section class="flex flex-col w-full lg:w-1/2 gap-4">
+        <section
+          class="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-[489px] h-auto sm:h-[135px] p-4 sm:py-8 sm:px-4 border-[0.25px] border-[#f1f1f1] rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <img
+            src="./icons/house.png"
+            alt=""
+            class="w-16 sm:w-[78px] h-16 sm:h-[78px] flex-shrink-0 mx-auto sm:mx-0 object-contain"
+          />
+          <section
+            class="flex flex-col gap-2 text-center sm:text-left justify-center flex-1 min-w-0"
+          >
+            <h1
+              class="text-lg sm:text-[24px] text-[#363958] font-bold leading-tight"
+            >
+              Find the Perfect Fit
+            </h1>
+            <p class="text-xs sm:text-[16px] text-[#3e3e3e] leading-snug">
               Everybody is different, which is why we offer styles for every
               body.
             </p>
           </section>
         </section>
-        <section class="features-card">
-          <img src="./icons/box.png" alt="" />
-          <section class="features-details">
-            <h1>Free Exchanges</h1>
-            <p>One of the many reasons you can shop with peace of mind.</p>
+        <section
+          class="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-[489px] h-auto sm:h-[135px] p-4 sm:py-8 sm:px-4 border-[0.25px] border-[#f1f1f1] rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <img
+            src="./icons/box.png"
+            alt=""
+            class="w-16 sm:w-[78px] h-16 sm:h-[78px] flex-shrink-0 mx-auto sm:mx-0 object-contain"
+          />
+          <section
+            class="flex flex-col gap-2 text-center sm:text-left justify-center flex-1 min-w-0"
+          >
+            <h1
+              class="text-lg sm:text-[24px] text-[#363958] font-bold leading-tight"
+            >
+              Free Exchanges
+            </h1>
+            <p class="text-xs sm:text-[16px] text-[#3e3e3e] leading-snug">
+              One of the many reasons you can shop with peace of mind.
+            </p>
           </section>
         </section>
-        <section class="features-card">
-          <img src="./icons/question.png" alt="" />
-          <section class="features-details">
-            <h1>Contact Our Seller</h1>
-            <p>
+        <section
+          class="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-[489px] h-auto sm:h-[135px] p-4 sm:py-8 sm:px-4 border-[0.25px] border-[#f1f1f1] rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,0.05)] bg-white"
+        >
+          <img
+            src="./icons/question.png"
+            alt=""
+            class="w-16 sm:w-[78px] h-16 sm:h-[78px] flex-shrink-0 mx-auto sm:mx-0 object-contain"
+          />
+          <section
+            class="flex flex-col gap-2 text-center sm:text-left justify-center flex-1 min-w-0"
+          >
+            <h1
+              class="text-lg sm:text-[24px] text-[#363958] font-bold leading-tight"
+            >
+              Contact Our Seller
+            </h1>
+            <p class="text-xs sm:text-[16px] text-[#3e3e3e] leading-snug">
               They are here to help you. That's quite literally what we pay them
               for.
             </p>
           </section>
         </section>
       </section>
-      <img src="./images/shopping.png" alt="shopping picture" />
+      <img
+        src="./images/shopping.png"
+        alt="shopping picture"
+        class="w-full sm:w-80 md:w-96 lg:w-[600px] h-auto lg:h-[350px] self-center justify-self-center object-contain"
+      />
     </section>
   </body>
 </html>
